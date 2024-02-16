@@ -2,6 +2,7 @@ package com.example.techtrain.railway.android
 
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,6 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.text).text = getString(R.string.main_text)
-        findViewById<ImageView>(R.id.imageView).setColorFilter(Color.BLACK)
+        findViewById<ImageView>(R.id.imageView).setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_IN)
     }
 }
