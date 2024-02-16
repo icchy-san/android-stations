@@ -14,6 +14,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.text).text = getString(R.string.main_text)
-        findViewById<ImageView>(R.id.imageView).setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_IN)
     }
 }
